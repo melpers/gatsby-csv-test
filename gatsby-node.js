@@ -3,14 +3,14 @@ const path = require('path');
 module.exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
   const typeDefs = `
-    type csvTestCsv implements Node @dontInfer {
+    type CsvTestCsv implements Node @dontInfer {
       name: String!
-      date: Date! @dateformat
+      year: Date! @dateformat
       code: Int!
     }
-    type jsonTestJson implements Node @dontInfer {
+    type JsonTestJson implements Node @dontInfer {
       name: String!
-      date: Date! @dateformat
+      year: Date! @dateformat
       code: Int!
       }
   `
